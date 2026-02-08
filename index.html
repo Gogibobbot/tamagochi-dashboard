@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тамагочи — Command Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background: #0a0a0f; color: #fff; }
+        .glass { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); }
+        .status-online { box-shadow: 0 0 10px #10b981; }
+    </style>
+</head>
+<body class="min-h-screen p-8">
+    <div class="max-w-6xl mx-auto">
+        <header class="mb-8 flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Тамагочи Command Center</h1>
+            <div class="flex items-center gap-2 glass px-4 py-2 rounded-full">
+                <div class="w-2 h-2 rounded-full bg-green-500 status-online"></div>
+                <span class="text-sm text-gray-400">Все системы работают</span>
+            </div>
+        </header>
+        
+        <div class="grid grid-cols-3 gap-6">
+            <div class="glass rounded-2xl p-6">
+                <h2 class="text-sm text-gray-400 mb-4">Команда</h2>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center">А</div><div><div class="font-medium">Айдар</div><div class="text-xs text-gray-500">CEO</div></div></div>
+                    <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center">Л</div><div><div class="font-medium">Ленар</div><div class="text-xs text-gray-500">CTO</div></div></div>
+                    <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-pink-500/20 flex items-center justify-center">А</div><div><div class="font-medium">Айнур</div><div class="text-xs text-gray-500">Product</div></div></div>
+                    <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-cyan-500/20 flex items-center justify-center">🤖</div><div><div class="font-medium">BobbyAxelrod</div><div class="text-xs text-gray-500">AI</div></div></div>
+                </div>
+            </div>
+            
+            <div class="glass rounded-2xl p-6">
+                <h2 class="text-sm text-gray-400 mb-4">Системы</h2>
+                <div class="space-y-3">
+                    <div class="flex justify-between"><span>VPN</span><span class="text-green-400 text-sm">● 64.34.84.6</span></div>
+                    <div class="flex justify-between"><span>GitHub</span><span class="text-green-400 text-sm">● GogibobBot</span></div>
+                    <div class="flex justify-between"><span>Почта</span><span class="text-yellow-400 text-sm">○ Настраивается</span></div>
+                </div>
+            </div>
+            
+            <div class="glass rounded-2xl p-6">
+                <h2 class="text-sm text-gray-400 mb-4">Проекты</h2>
+                <div class="space-y-3">
+                    <div><div class="flex justify-between text-sm mb-1"><span>WireGuard VPN</span><span class="text-green-400">100%</span></div><div class="h-2 bg-gray-800 rounded-full"><div class="h-2 bg-green-500 rounded-full" style="width:100%"></div></div></div>
+                    <div><div class="flex justify-between text-sm mb-1"><span>GitHub Регистрация</span><span class="text-green-400">100%</span></div><div class="h-2 bg-gray-800 rounded-full"><div class="h-2 bg-green-500 rounded-full" style="width:100%"></div></div></div>
+                    <div><div class="flex justify-between text-sm mb-1"><span>Дашборд</span><span class="text-blue-400">95%</span></div><div class="h-2 bg-gray-800 rounded-full"><div class="h-2 bg-blue-500 rounded-full" style="width:95%"></div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
